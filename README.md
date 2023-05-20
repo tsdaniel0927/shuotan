@@ -16,5 +16,5 @@ Shuo Tan (Daniel) - tsdaniel0927@gmail.com
 [Django.py]:https://img.shields.io/badge/-Django-092E20.svg?style=for-the-style&logo=django&style=flat
 [Django-url]: https://www.djangoproject.com/
 
-[React.js]: https://img.shields.io/badge/-React-61DAFB.svg?style=for-the-badge&logo=react&style=flat
+[React.js]: https://img.shields.io/badge/-React-61DAFB.svg?style=for-the-badge&logo=react&style=flat&color=lightgrey
 [React-url]: https://reactjs.org/
