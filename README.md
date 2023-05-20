@@ -13,8 +13,8 @@ Shuo Tan (Daniel) - tsdaniel0927@gmail.com
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[Django.py]:https://img.shields.io/badge/-Django-092E20.svg?style=for-the-badge&logo=django&style=flat
+[Django.py]:https://img.shields.io/badge/-Django-092E20.svg?style=for-the-style&logo=django&style=flat
 [Django-url]: https://www.djangoproject.com/
 
-[React.js]: https://img.shields.io/badge/-React-61DAFB.svg?style=for-the-badge&logo=react&logoColor=61DAFB
+[React.js]: https://img.shields.io/badge/-React-61DAFB.svg?style=for-the-badge&logo=react&style=flat
 [React-url]: https://reactjs.org/
