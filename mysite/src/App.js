@@ -1,5 +1,5 @@
 import './App.css';
-import Myheader from './components/Header/header';
+import Myheader from './components/Header/navbar';
 
 function App() {
   return (
