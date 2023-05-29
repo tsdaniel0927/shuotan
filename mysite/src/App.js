@@ -1,7 +1,6 @@
 import './App.css';
 import Myfooter from './components/Footer/footer';
 import Myheader from './components/Header/navbar';
-import './index.css'
 // import { useRef } from 'react';      check for the window's height
 
 function App() {
