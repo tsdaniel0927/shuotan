@@ -23,9 +23,6 @@ function Myheader(){
                         <Button style={style}>ME</Button>
                     </Toolbar>
                 </AppBar>
-            <div>
-                Content goes here
-            </div>
             </Box>
         </React.Fragment>
     )
