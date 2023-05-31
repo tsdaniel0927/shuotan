@@ -8,3 +8,20 @@
     border-top: solid lightgrey;
     text-align: center;
 }
+
+.footer-wrapper {
+    /* height: 41.5px; */
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-content: center;
+    text-align: center;
+}
+
+.icons {
+    color: grey;
+    margin-right: 10px;
+    text-align: right;
+}
