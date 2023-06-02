@@ -3,4 +3,12 @@
   min-height:85vh;
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+
+.sub-heading{
+  color: #4f81bd;
+  font-weight: 900;
+  font-size: large;
 }
