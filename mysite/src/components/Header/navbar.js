@@ -1,6 +1,5 @@
 import React from 'react';
 import {AppBar, Box, Toolbar, Typography, CssBaseline, Button} from '@mui/material'
-// import './navbar.css'
 
 function Myheader(){
     const style = {
@@ -12,10 +11,10 @@ function Myheader(){
         <React.Fragment>
             <CssBaseline />
             <Box sx={{flexGrow: 1}}>
-                <AppBar position='static' style={{backgroundColor: 'lightseagreen'}}>  
+                <AppBar position='static' style={{backgroundColor: '#366091'}}>  
                     <Toolbar>
                         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Pacifico'/>
-                        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} style={{fontFamily: 'Pacifico', color: '#656571'}}>
+                        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} style={{fontFamily: 'Pacifico', color: 'white'}}>
                             Shuo Tan
                         </Typography>
                         <Button style={style}>About</Button>
