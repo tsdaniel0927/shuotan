@@ -1,0 +1,13 @@
+.flex-wrapper {
+    display: flex;
+    min-height: 85vh;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+/* for showing the question in verification page in the middle of the page */
+.container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

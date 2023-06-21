@@ -2,12 +2,13 @@ import React from 'react';
 import { useNavigate, useLocation} from 'react-router-dom';
 import { TextField, Button, Collapse } from '@mui/material';
 import {useReward} from 'react-rewards'
+import './verification.css'
 
 function NameQuestion({ name, handleChange, handleClick, isAnimating }) {
   return (
-    <div className="flex-wrapper">
+    <div className="flex-wrapper" style={{flexDirection: 'column', marginTop:'100px'}}>
       <div className="container">
-        <div style={{ marginTop: '100px', textAlign: 'center' }}>
+        <div style={{ textAlign: 'center' }}>
           <Collapse in={true}>
             Simple question: What's my name? &emsp;&emsp;
             <TextField
@@ -51,8 +52,8 @@ function Verify() {
       }, 2000);
     } else {
       window.alert('Nope, wrong answer 🥲, try again');
-      if(pathname !== '/verification'){
-        navigate('/verification')
+      if(pathname !== '/'){
+        navigate('/')
       }
     }
   }
