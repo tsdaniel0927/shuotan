@@ -15,7 +15,7 @@ function PrivateRoute({ children }) {
 
     setTimeout(()=>{ 
         localStorage.removeItem('userAnswer')
-    },1000*60*30)  // need to change the session expired time here
+    },1000*60*60)  // need to change the session expired time here
 
     return children;
 }
