@@ -1,7 +1,9 @@
 ## About this site
-This is my personal website, plan to do:
-* Introduction of me and my projects
-* Some fun surveys to analyse your characristics, my results will also be here
+This is my personal website, it has:
+* Know me in 55 seconds 😀
+* About me
+* My projects
+* My certifications - working on more
 
 ## Built with
 * [![React][React.js]][React-url]
