@@ -56,9 +56,11 @@ function Myheader() {
                 <MenuItem onClick={handleClose} component={Link} to="/projects/facedetection">FaceDetection</MenuItem>
               </Menu>
             </div>
-            <Button  size='small' sx={{ ...style, '@media (max-width: 600px)': { fontSize: 12 }, '@media (min-width: 601px) and (max-width: 960px)': { fontSize: 14 } }}>
-              ME
-            </Button>
+            <Link to='/certifications'>
+              <Button  size='small' sx={{ ...style, '@media (max-width: 600px)': { fontSize: 12 }, '@media (min-width: 601px) and (max-width: 960px)': { fontSize: 14 } }}>
+                Certifications
+              </Button>
+            </Link>
           </Toolbar>
         </AppBar>
       </Box>
