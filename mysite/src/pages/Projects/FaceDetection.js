@@ -36,15 +36,16 @@ export default function Projects() {
         <Collapse in={isFRGUIexpanded} timeout={500}>
           <img
             src={FRcorrect}
-            alt="OHCWAproject"
+            alt="FRproject"
             className="project-image"
           />
         </Collapse>
         <Collapse in={isResultFRexpanded} timeout={500}>
           <img
             src={ResultFR}
-            alt="Approval-Email"
+            alt="FRresults"
             className="project-image"
+            style={{marginBottom:'20px'}}
           />
         </Collapse>
       </div>

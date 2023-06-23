@@ -44,7 +44,7 @@ function Verify() {
   }
 
   function handleClick() {
-    if (name === 'Shuo Tan') {
+    if (name === 'Shuo Tan' || 'Daniel Tan' || 'Daniel') {
       localStorage.setItem('userAnswer', name);
       reward();
       setTimeout(() => {

@@ -9,14 +9,14 @@
   .wrapper-left-projects {
     display: flex;
     flex-direction: column;
-    flex: 0 0 50%;
+    flex:50%;
     justify-content: flex-start;
   }
   
   .wrapper-right-projects {
     display: flex;
     flex-direction: column;
-    flex: 0 0 50%;
+    flex:50%;
     text-align: justify;
     margin-top: 4.5vw;
   }
@@ -27,8 +27,8 @@
     font-size: large;
   }
   
-  .project-image {
-    width: 500px;
+  .ohcwa-image{
+    width: 35vw;
     height: auto;
   }
 
@@ -45,6 +45,11 @@
   .wrapper-left-projects,
   .wrapper-right-projects {
     flex-basis: 100%;
+  }
+
+  .ohcwa-image{
+    width: 75vw;
+    height: auto;
   }
   
 }
@@ -63,8 +68,9 @@
     justify-content: center;
   }
 
-  .project-image{
+  .ohcwa-image{
     width: 75vw;
+    height: auto;
   }
 
   .list{

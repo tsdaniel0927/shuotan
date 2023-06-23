@@ -28,7 +28,7 @@
   }
   
   .project-image {
-    width: 500px;
+    width: 35vw;
     height: auto;
   }
 
@@ -45,6 +45,11 @@
   .wrapper-left-projects,
   .wrapper-right-face {
     flex-basis: 100%;
+  }
+
+  .project-image{
+    width: 75vw;
+    height: auto;
   }
   
 }
