@@ -74,12 +74,12 @@ function About(){
                 </div>
 
                 <div className="wrapper-right">
-                    <img src={profileIMG} alt="Profile" style={{width:'18vw', height:'auto', marginBottom:'10px', marginTop:'1vh'}}/>
+                    <img src={profileIMG} alt="Profile" className="profile-image"/>
                     <div className="contact-details">Mobile: 0406194250</div>
                     <div className="contact-details">Email: <a className="hyper-link" href={`mailto:${email}`}>tsdaniel0927@gmail.com</a></div> <br/>
                     <div className="contact-details"> {'>>'} I think with more powerful AI</div>
                     <div className="contact-details"> {'>>'} What we really need... </div>
-                    <div className="contact-details"> {'>>'} is nothing but just an idea </div>
+                    <div className="contact-details" style={{marginBottom:'20px'}}> {'>>'} is nothing but just an idea </div>
                 </div>
 
             </div>

@@ -39,6 +39,13 @@
   margin-top: 10px;
 }
 
+.profile-image{
+  width: 18vw;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 1vh;
+}
+
 
 /* Media query for tablet view */
 @media (max-width: 768px) {
@@ -49,6 +56,13 @@
   .wrapper-left,
   .wrapper-right {
     flex-basis: 100%;
+  }
+
+  .profile-image{
+    width: 60vw;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 1vh;
   }
 }
   
@@ -63,5 +77,12 @@
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
+  }
+
+  .profile-image{
+    width: 60vw;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 1vh;
   }
 }
