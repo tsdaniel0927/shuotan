@@ -24,8 +24,8 @@ function Myheader() {
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static" style={{ backgroundColor: '#366091' }}>
           <Toolbar>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico" />
-            <Typography variant="h8" component="div" sx={{ flexGrow: 1 }} style={{ fontFamily: 'Pacifico', color: 'white' }}>
+            {/* <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico" /> */}
+            <Typography variant="h8" component="div" sx={{ flexGrow: 1 }} style={{ fontFamily: 'Brush Script MT, cursive', color: 'white', fontSize:'25px', fontWeight:'500'}}>
               <Link className='home-link' style={{ textDecoration: 'none', color: 'white' }} to="/home">
                 Shuo Tan
               </Link>
