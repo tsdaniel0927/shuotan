@@ -20,6 +20,11 @@ function NameQuestion({ name, handleChange, handleClick, isAnimating }) {
             <Button style={{marginLeft: '5px'}} id='rewardId' onClick={handleClick} disabled={isAnimating}>
               Submit
             </Button>
+            <div style={{textAlign:'center', color:'grey', marginTop:'2vh'}}>
+              *This is my personal website <br/>
+              *It is protected and secure <br/>
+              *You will not be asked for personal information
+            </div>
           </Collapse>
         </div>
       </div>
