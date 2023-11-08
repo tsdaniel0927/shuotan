@@ -42,6 +42,7 @@ function About(){
                     
                     <span className="sub-heading">Experiences</span>
                     <div style={{marginBottom:'20px'}}>
+                        2023.10-Now -- IT networking support and enginner at COMO The Treasury <br/>
                         2022.2-2022.11 -- Developer in the <a className="hyper-link" href="/projects">OCHWA project</a> <br/>
                         2017.11-2020.1 -- Receptionist in Rong's massage in Joondalup shopping centre <br/>
                         2021.1-2021.5 -- Kitchen Hand in The Collab Bar in West Perth
@@ -77,9 +78,9 @@ function About(){
                     <img src={profileIMG} alt="Profile" className="profile-image"/>
                     <div className="contact-details">Mobile: 0406194250</div>
                     <div className="contact-details">Email: <a className="hyper-link" href={`mailto:${email}`}>tsdaniel0927@gmail.com</a></div> <br/>
-                    <div className="contact-details"> {'>>'} I think with more powerful AI</div>
-                    <div className="contact-details"> {'>>'} What we really need... </div>
-                    <div className="contact-details" style={{marginBottom:'20px'}}> {'>>'} is nothing but just an idea </div>
+                    <div className="contact-details"> {'if ('} <a className="hyper-link" href={`mailto:${email}`}>talked</a> {'||'} <a className="hyper-link" href="https://www.linkedin.com/in/daniel-tan-37870a133">connected</a> {')'} </div>
+                    <div className="contact-details"> {'    { gratitude += 1; }'} </div>
+                    <div className="contact-details" style={{marginBottom:'20px'}}> {'else { $("I").feel("down"); }'}  </div>
                 </div>
 
             </div>
