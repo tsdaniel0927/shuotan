@@ -12,40 +12,43 @@ function About(){
             <div className="flex-wrapper-about">
                 <div className="wrapper-left">
                     <div style={{marginBottom:'20px'}}>
-                        I'm a software graduate from <a className="hyper-link" href='https://uwa.edu.au'>University of Western Australia</a>, my bachelor degree is Engineering Science, specialise in software engineering. I also hold a degree of Master of Professional Engineering specialse in software. My most recent projects are <a className='hyper-link' href="/projects/ohcwa">OHCWA</a> and <a className='hyper-link' href="/projects/facedetection">Face Recognition</a>.
+                        I'm a software graduate from <a className="hyper-link" href='https://uwa.edu.au'>University of Western Australia</a>, I have a Master degree of Software Engineering in UWA. My most recent projects are <a className='hyper-link' href="/projects/ohcwa">OHCWA</a> and <a className='hyper-link' href="/projects/facedetection">Face Recognition</a>. <br/>
+                        I currently work in IT department of <a className="hyper-link" href="https://www.linkedin.com/company/cloughgroup/posts/">Clough</a> as a IT Operation Analyst. My main responsibilities basically include - <b> solving complex tickets and generate new ideas to automate our work and make it reliable. </b>
                     </div>
 
                     <span className="sub-heading">Education</span>
                     <div style={{marginBottom:'20px'}}>
-                        2023.3-now -- National Institude of Technology <br/>
+                        2021-2022 -- Master of Professional Engineering, MPE specialise in software (UWA)<br/>
+                        2023.3-2024.3 -- National Institude of Technology (NIT)<br/>
                         ### NIT is a industrial focused training organisation that provides professional IT training courses <br/>
-                        2021-2022 -- Master of Professional Engineering, MPE specialise in software <br/>
-                        2017-2020 -- Bachelor of Engineering Science, specialise in software
+                        2017-2020 -- Bachelor of Engineering Science, specialise in software (UWA)
+                    </div>
+
+                    <span className="sub-heading">Personal Development & Achivements</span>
+                    <div style={{marginBottom:'20px'}}>
+                        Automated user Termination Procedure with a PowerShell Script, implemented a logic flow and decrease the time for terminating one user from 150s to 5s<br/>
+                        Granted with level 2 access within 5 months<br/>
+                        Participated company events - <a className="hyper-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7176401480394973184/">Harmony Day</a><br/>
+                        Proposed a solution to resolve a large Mircrosoft organisation issue "Error 1001"<br/>
+                        Australian computer science accociate member<br/>
                     </div>
 
                     <span className="sub-heading">Skill (based on exposure time)</span>
                     <div style={{marginBottom:'20px'}}>
-                        <SkillBar skill="ReactJS" score={80}/> &nbsp;
-                        <SkillBar skill="Flask" score={60}/> &nbsp;
-                        <SkillBar skill="Django" score={70}/> &nbsp;
+                        <SkillBar skill="JS,CSS,HTML" score={80}/> &nbsp;
                         <SkillBar skill="Python" score={70}/> &nbsp;
-                        <SkillBar skill="AWS" score={60}/> &nbsp;
-                        <SkillBar skill="CSS" score={80}/> &nbsp;
-                        <SkillBar skill="HTML" score={80}/> &nbsp;
-                        <SkillBar skill="C" score={65}/> &nbsp;
-                        <SkillBar skill="java" score={50}/> &nbsp;
-                        <SkillBar skill="R" score={40}/> &nbsp;
+                        <SkillBar skill="Endpoint Manager" score={80}/> &nbsp;
+                        <SkillBar skill="AD, AAD" score={70}/> &nbsp;
+                        <SkillBar skill="PowerShell" score={90}/> &nbsp;
                         <SkillBar skill="MATLAB" score={50}/> &nbsp;
-                        <SkillBar skill="Arduino" score={60}/> &nbsp;
-                        <SkillBar skill="RaspberryPi" score={70}/> &nbsp;
+                        <SkillBar skill="RaspberryPi, Arduino" score={50}/> &nbsp;
                     </div>
                     
                     <span className="sub-heading">Experiences</span>
                     <div style={{marginBottom:'20px'}}>
-                        2023.10-Now -- IT networking support and enginner at COMO The Treasury <br/>
-                        2022.2-2022.11 -- Developer in the <a className="hyper-link" href="/projects/ohcwa">OCHWA project</a> <br/>
-                        2017.11-2020.1 -- Receptionist in Rong's massage in Joondalup shopping centre <br/>
-                        2021.1-2021.5 -- Kitchen Hand in The Collab Bar in West Perth
+                        2023.12-now -- IT Services and Operations Support Analyst <br/>
+                        2023.10-2024.1 -- IT networking support and enginner at COMO The Treasury <br/>
+                        2022.2-2022.11 -- Software Engineer in the <a className="hyper-link" href="/projects/ohcwa">OCHWA project</a> <br/>
                     </div>
                     
                     <span className="sub-heading">Courses</span>
@@ -57,11 +60,6 @@ function About(){
                         Design Project - Data Entry System for patients <b>(High Distinction)</b>
                     </div>
 
-                    <span className="sub-heading">Personal Development</span>
-                    <div style={{marginBottom:'20px'}}>
-                        Australian computer science accociate member
-                    </div>
-
                     <span className="sub-heading">Volunteer</span>
                     <div style={{marginBottom:'20px'}}>
                         {/* <a className="hyper-link" href="https://www.instagram.com/p/CCS-N_Ljfsj/">Attended protest for protecting animals</a><br/> */}
@@ -71,13 +69,17 @@ function About(){
                     <span className="sub-heading">References</span>
                     <div style={{marginBottom:'20px'}}>
                         Tasha Stewart (Senior Property Manager) -- 0424690300<br/>
+                        Marc Barber (Senior IT Infrastructure Expert) -- Marc.Barber@live.com
                     </div>
                 </div>
 
                 <div className="wrapper-right">
                     <img src={profileIMG} alt="Profile" className="profile-image"/>
                     <div className="contact-details">Mobile: 0406194250</div>
-                    <div className="contact-details">Email: <a className="hyper-link" href={`mailto:${email}`}>tsdaniel0927@gmail.com</a></div> <br/>
+                    <div className="contact-details">
+                        Email: <a className="hyper-link" href={`mailto:${email}`}>tsdaniel0927@gmail.com</a> <br/>
+                        Work: <a className="hyper-link" href={`mailto:${email}`}>daniel.tan@cloughgroup.com</a>
+                    </div> <br/>
                     <div className="contact-details"> {'if ('} <a className="hyper-link" href={`mailto:${email}`}>talked</a> {'||'} <a className="hyper-link" href="https://www.linkedin.com/in/daniel-tan-37870a133">connected</a> {')'} </div>
                     <div className="contact-details"> {'    { gratitude += 1; }'} </div>
                     <div className="contact-details" style={{marginBottom:'20px'}}> {'else { $("I").feel("down"); }'}  </div>
