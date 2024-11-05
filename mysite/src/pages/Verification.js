@@ -50,7 +50,7 @@ function Verify() {
 
   function handleClick() {
     if (name === 'Shuo Tan' || name === 'Daniel Tan' || name === 'Daniel') {
-      localStorage.setItem('userAnswer', name);
+      sessionStorage.setItem('userAnswer', name);
       reward();
       setTimeout(() => {
         navigate('/home');
