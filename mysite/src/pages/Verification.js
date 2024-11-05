@@ -49,7 +49,7 @@ function Verify() {
   }
 
   function handleClick() {
-    if (name === 'Shuo Tan' || 'Daniel Tan' || 'Daniel') {
+    if (name === 'Shuo Tan' || name === 'Daniel Tan' || name === 'Daniel') {
       localStorage.setItem('userAnswer', name);
       reward();
       setTimeout(() => {
