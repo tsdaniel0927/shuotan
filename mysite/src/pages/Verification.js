@@ -16,6 +16,11 @@ function NameQuestion({ name, handleChange, handleClick, isAnimating }) {
               size="small"
               value={name}
               onChange={handleChange}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  handleClick(); // Trigger handleClick on Enter key press
+                }
+              }}
             />
             <Button style={{marginLeft: '5px'}} id='rewardId' onClick={handleClick} disabled={isAnimating}>
               Submit
