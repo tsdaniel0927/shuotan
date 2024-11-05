@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './home.css'
 import selfIntro from '../images/self-intro.mp4'
 import { Fade } from '@mui/material';
 
 export default function Home(){
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const userAnswer = sessionStorage.getItem('userAnswer');
+        if (!userAnswer) {
+            navigate('/'); // Redirect to verification page if no valid session
+        }
+    }, [navigate]);
+
     return(
         <Fade in={true} timeout={1000}>
             <div className="flex-wrapper-home">
