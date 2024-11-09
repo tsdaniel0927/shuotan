@@ -1,10 +1,20 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import { Collapse } from "@mui/material";
 import "./facedetection.css";
 import FRcorrect from "../../images/FRcorrect.jpeg";
 import ResultFR from "../../images/ResultFR.jpeg";
 
 export default function Projects() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const userAnswer = sessionStorage.getItem('userAnswer');
+    if (!userAnswer) {
+      navigate('/'); // Redirect to verification page if no valid session
+    }
+  }, [navigate]);
+
   const [isFRGUIexpanded, setIsFRGUIexpanded] = useState(false);
   const [isResultFRexpanded, setIsResultFRexpanded] = useState(false);
   const [isContentxpanded, setIsContentExpanded] = useState(false);

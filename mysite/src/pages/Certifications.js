@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import './certifications.css'
 import MasterTestaumur from '../images/certifications/MasterTestamur.jpg'
 import BachelorTestamur from '../images/certifications/BachelorTestamur.jpg'
@@ -7,6 +8,15 @@ import SDLC from '../images/certifications/SDLC.jpg'
 import { Fade } from "@mui/material";
 
 export default function Home(){
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const userAnswer = sessionStorage.getItem('userAnswer');
+        if (!userAnswer) {
+            navigate('/'); // Redirect to verification page if no valid session
+        }
+    }, [navigate]);
+
     return(
         <Fade in={true} timeout={1000}>
             <div className="flex-wrapper-certifications">

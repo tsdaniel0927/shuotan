@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "@mui/material";
+import { useNavigate } from 'react-router-dom';
 import './error.css'
 
 export default function Error(){
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const userAnswer = sessionStorage.getItem('userAnswer');
+        if (!userAnswer) {
+            navigate('/'); // Redirect to verification page if no valid session
+        }
+    }, [navigate]);
+
     return(
         <div className="flex-wrapper-error">
             <h1>OOPS!</h1>

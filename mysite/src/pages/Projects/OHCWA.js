@@ -1,10 +1,19 @@
 import React, {useEffect, useState} from "react";
 import { Collapse } from "@mui/material";
+import { useNavigate } from 'react-router-dom';
 import "./ohcwa.css";
 import clientApproval from "../../images/clientApproval.jpeg";
 import OHCWA from "../../images/OHCWA.jpeg";
 
 export default function Projects() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const userAnswer = sessionStorage.getItem('userAnswer');
+    if (!userAnswer) {
+      navigate('/'); // Redirect to verification page if no valid session
+    }
+  }, [navigate]);
 
   const [isPageCollapsed, setIsPageCollapsed] = useState(false);
 

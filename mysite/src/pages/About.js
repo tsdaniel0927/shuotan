@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import './about.css';
 import SkillBar from "../components/Skillbar/skillbar";
 import profileIMG from "../images/profileIMG.jpeg";
 import { Fade } from '@mui/material';
 
 function About(){
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const userAnswer = sessionStorage.getItem('userAnswer');
+        if (!userAnswer) {
+            navigate('/'); // Redirect to verification page if no valid session
+        }
+    }, [navigate]);
+
     const email = 'tsdaniel0927@gmail.com'
 
     return(
@@ -68,8 +78,7 @@ function About(){
 
                     <span className="sub-heading">References</span>
                     <div style={{marginBottom:'20px'}}>
-                        Tasha Stewart (Senior Property Manager) -- 0424690300<br/>
-                        Marc Barber (Senior IT Infrastructure Expert) -- Marc.Barber@live.com
+                        For references, please contact me via <a className="hyper-link" href={`mailto:${email}`}>email</a> or <a className="hyper-link" href="https://www.linkedin.com/in/daniel-tan-37870a133">linkedin</a>
                     </div>
                 </div>
 
