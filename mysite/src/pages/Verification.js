@@ -55,11 +55,13 @@ function Verify() {
 
   function handleClick() {
     if (name === 'Shuo Tan' || name === 'Daniel Tan' || name === 'Daniel') {
-      sessionStorage.setItem('userAnswer', name);
+      localStorage.setItem('userAnswer', name);
       reward();
-      setTimeout(() => {
-        navigate('/home');
-      }, 2000);
+      Promise.resolve().then(() => {
+        setTimeout(() => {
+          navigate('/home', { replace: true });
+        }, 1_800_000);
+      });
     } else {
       window.alert('Nope, wrong answer 🥲, try again');
       if(pathname !== '/'){

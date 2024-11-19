@@ -8,7 +8,7 @@ export default function Home(){
     const navigate = useNavigate();
 
     useEffect(() => {
-        const userAnswer = sessionStorage.getItem('userAnswer');
+        const userAnswer = localStorage.getItem('userAnswer');
         if (!userAnswer) {
             navigate('/'); // Redirect to verification page if no valid session
         }
