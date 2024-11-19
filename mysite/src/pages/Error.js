@@ -9,7 +9,7 @@ export default function Error(){
     useEffect(() => {
         const userAnswer = sessionStorage.getItem('userAnswer');
         if (!userAnswer) {
-            navigate('/'); // Redirect to verification page if no valid session
+            navigate('/'); // Redirect to verification page if no valid session or token expired
         }
     }, [navigate]);
 
