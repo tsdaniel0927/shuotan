@@ -60,7 +60,7 @@ function Verify() {
       Promise.resolve().then(() => {
         setTimeout(() => {
           navigate('/home', { replace: true });
-        }, 1_800_000);
+        }, 1500);
       });
     } else {
       window.alert('Nope, wrong answer 🥲, try again');
